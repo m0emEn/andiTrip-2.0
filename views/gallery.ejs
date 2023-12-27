@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+<body>
+    <%- include('partials/navbar') %>
+
+    <h1 class="display-4 text-center mt-5">Gallery Shop</h1>
+    <div class="container mt-5">
+      
+        <div class="row" id="masonry-container">
+
+          <% items.forEach(item => {%>
+            <div class="col-lg-4 col-md-6 gallery-item  d-flex justify-content-center">
+              <div class="card">
+                  <img src="<%= item.imgUrl %>" class="card-img-top img-fluid" alt="nature">
+                  <div class="card-body text-left">
+                    <h5 class="card-title"><%= item.name %></h5>
+                    <p class="card-text">Price:<%= item.price %>$</p>
+                    <form action="/buy/<%= item._id%>" method="post">
+                        <button type="submit" class="btn btn-primary">ADD TO CARTE</button>
+                    </form>
+                  </div>
+                </div>
+          </div>
+            <%}); %>
+            
+
+        </div>
+
+    </div>
+</body>
+<%- include('partials/footer') %>

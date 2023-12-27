@@ -1,0 +1,91 @@
+<footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 text-left">
+              <h5>AndiTrip</h5>
+              <p>est une plateforme touristique de mise en relation entre des acteurs touristiques (guides touristique, agences de tourisme, des organisateurs, des photographes...) et des demandeurs (voyageurs) pour faciliter l’accès aux différents endroits (naturelle, culturelle, touristique...), afin de mise en valeur les ressources naturelles et d’offrir une expérience mémorable pour les visiteurs.</p>
+          </div>
+
+
+          <div class="col-md-6">
+              <div class="text-md-right">
+                 
+                  <h5>Contact Us</h5>
+                  <p >Email: contact@AndiTrip.tn<br>Phone: (+216) 25 878 888</p>
+                  <div class="social-links">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <strong>&copy; 2023 Anditrip. All rights reserved.</strong>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+<script src="/javascript/swiper.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          speed:1000,
+          spaceBetween: 30,
+          slidesPerGroup: 1,
+          loop: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          autoplay: {
+         delay: 5000,
+     },breakpoints: {
+        
+        680: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        speed:1000,
+
+        },
+       
+        1080:{
+        slidesPerView: 2,
+        spaceBetween: 30,
+        },
+        1280: {
+        slidesPerView: 3,
+        spaceBetween: 30
+       
+        },       
+    }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+        // Initialize Masonry after all images have loaded
+        var masonryContainer = document.getElementById('masonry-container');
+        var masonry = new Masonry(masonryContainer, {
+            itemSelector: '.gallery-item',
+            columnWidth: '.gallery-item',
+            percentPosition: true
+        });
+    });
+      </script>
+
+
+</html>
